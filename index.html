@@ -1,17 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Himalaya Exhibition</title>
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <p class="h1">
-        hello world
-    </p>
+    <link rel="stylesheet" href="/assets/css/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header for the site -->
+    <header class="py-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-sm-2">
+            <img
+              src="/assets/img/HEX horizontal Logo.png"
+              alt="HEX Horizontal Logo"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-sm-10">
+            <nav class="d-flex justify-content-end align-items-center">
+              <ul class="d-flex mb-0 me-5">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Clubs</a></li>
+                <li><a href="#">Info</a></li>
+              </ul>
+              <div class="cta-button">
+                <button><a href="#">Join Us</a></button>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero position-relative">
+      <div class="container-fluid g-0">
+        <!-- Swiper -->
+
+        <div class="swiper myHeroSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background: linear-gradient(0deg, rgba(255, 255, 255, 0.315), #325069),url('/assets/img/HEX Slide Robotics.jpeg');">
+             
+              <div class="slide-content" >
+                <h2>Himalaya Exhibition(HEX)</h2>
+                <h3>
+                    <i class="fa fa-map-marker"></i> Himalaya College of Engineering, Chysal, Lalitpur &nbsp; &nbsp; | &nbsp; &nbsp; 
+                    <i class="fa fa-calendar"></i>  14th & 15th July 2023
+                </h3>
+                <h4>Imagine | <span>Innovate</span>   | Inspire</h4>
+               
+              </div>
+              
+            </div>
+            <div class="swiper-slide"  style="background: linear-gradient(0deg, rgba(255 255 255 / 54%), #325069),url('/assets/img/HEX Slide Civil.jpeg');">
+                <div class="slide-content" >
+                    <h2>Himalayan Civil Club Special</h2>
+                  
+                    <h4>Imagine | <span>Innovate</span>   | Inspire</h4>
+                   
+                  </div>
+                  
+            </div>
+            <div class="swiper-slide" style="background: linear-gradient(0deg, rgba(255 255 255 / 54%), #325069),url('/assets/img/HEX Slide ICT.jpeg');">
+                <div class="slide-content" >
+                    <h2>Himalayan IT Club Special</h2>
+                  
+                    <h4>Imagine | <span>Innovate</span>   | Inspire</h4>
+                   
+                  </div>
+                  
+                  
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="hex-separator"><svg fill="#ffffff" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1480 117" preserveAspectRatio="none"><path d="M0 24.5c246.7 46.3 493.3 69.4 740 69.4s493.3-23.1 740-69.4V117H0V24.5z"></path></svg></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
-</body>
+    <script src="/assets/js/custom.js"></script>
+  </body>
 </html>
