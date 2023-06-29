@@ -1,15 +1,16 @@
 // Importing Important Fonts
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Poppins:wght@600;900&display=swap');
 
 // Variables
 $primary_font : 'Karla', sans-serif;
 $secondary_font :  'Poppins', sans-serif;
-
+$theme_color:#325069;
 $accent_color: #F8669E;
 $secondary: #fff;
 body{
     font-family: $primary_font;
 }
+
 button{
     background: $accent_color;
     padding: 0.6rem 2.5rem;
@@ -70,6 +71,26 @@ header{
     }
 }
 
+.section-title{
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: $secondary_font;
+    h3{
+        font-size: 2.8rem;
+    }
+    span{
+        font-weight: bold;
+        color: $theme_color;
+    }
+    .shape::before,.shape::after{
+        content:"";
+        display: block;
+        height: 2px;
+        width: 125px;
+        background: #000    ;
+        opacity: .15;
+    }
+}
 // Swiper
 
 .hero {
@@ -138,4 +159,114 @@ header{
       }
     
    
+}
+
+.about-us{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    .coordinator{
+        img{
+           
+        }
+        h5{
+            font-weight: 600;
+            font-family: $secondary_font;
+        }
+        a{
+            color: #000;
+            transition: all 0.6s ease;
+            &:hover{
+                color: $accent_color;
+            }
+        }
+    }
+}
+
+.features{
+    background: #f2f2f2;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    .inner-content{
+        transition: all 0.5s ease-in-out;
+        border-bottom: $theme_color 3px solid;
+        h6{
+            font-weight: 600;
+            font-size: 1.3rem;
+            font-family: $secondary_font;
+        }
+        &:hover{
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset!important;
+        }
+    }
+}
+.clubs{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    .club-list{
+        gap:25px;
+        flex-wrap: wrap;
+        .club-item{
+            flex-direction: row;
+            width:calc(50% - 25px);
+            border-left:4px solid $accent_color;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            transition: all ease-in-out 0.6s;
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            }
+            img{
+                height: 165px;
+                width: 165px;
+                object-fit: contain;
+            }
+            p{
+                margin-bottom: 0!important;
+            }
+            &:last-child{
+                width: 80%;
+            }
+        }
+        h5{
+            margin-bottom:10px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+        
+    }
+    a{
+        color: $theme_color;
+       
+        text-decoration: none;
+        font-family: $secondary_font;
+        font-weight: 600;
+        margin-top: 10px;
+        transition: all 0.6s ease;
+        &:hover{
+            color: $accent_color;
+        }
+    }
+}
+.gallery{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background: #f2f2f2;
+}
+footer {
+    background: #325069;
+    p{
+    margin-bottom: 0;
+    color:#fff;
+    }
+    a{
+        color: $accent_color;
+       
+        text-decoration: none;
+        font-family: $secondary_font;
+        font-weight: 600;
+        margin-top: 10px;
+        transition: all 0.6s ease;
+        
+    }
 }

@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Poppins:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Poppins:wght@600;900&display=swap");
 body {
   font-family: "Karla", sans-serif;
+  scroll-behavior: smooth;
 }
 
 button {
@@ -56,6 +57,27 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   color: #F8669E;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: "Poppins", sans-serif;
+}
+.section-title h3 {
+  font-size: 2.8rem;
+}
+.section-title span {
+  font-weight: bold;
+  color: #325069;
+}
+.section-title .shape::before, .section-title .shape::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 125px;
+  background: #000;
+  opacity: 0.15;
 }
 
 .hero .hex-separator {
@@ -120,4 +142,109 @@ header nav ul li a:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.about-us {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.about-us .coordinator h5 {
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.about-us .coordinator a {
+  color: #000;
+  transition: all 0.6s ease;
+}
+.about-us .coordinator a:hover {
+  color: #F8669E;
+}
+
+.features {
+  background: #f2f2f2;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.features .inner-content {
+  transition: all 0.5s ease-in-out;
+  border-bottom: #325069 3px solid;
+}
+.features .inner-content h6 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+}
+.features .inner-content:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset !important;
+}
+
+.clubs {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.clubs .club-list {
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.clubs .club-list .club-item {
+  flex-direction: row;
+  width: calc(50% - 25px);
+  border-left: 4px solid #F8669E;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all ease-in-out 0.6s;
+}
+.clubs .club-list .club-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.clubs .club-list .club-item img {
+  height: 165px;
+  width: 165px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.clubs .club-list .club-item p {
+  margin-bottom: 0 !important;
+}
+.clubs .club-list .club-item:last-child {
+  width: 80%;
+}
+.clubs .club-list h5 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.clubs a {
+  color: #325069;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: all 0.6s ease;
+}
+.clubs a:hover {
+  color: #F8669E;
+}
+
+.gallery {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background: #f2f2f2;
+}
+
+footer {
+  background: #325069;
+}
+footer p {
+  margin-bottom: 0;
+  color: #fff;
+}
+footer a {
+  color: #F8669E;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: all 0.6s ease;
 }/*# sourceMappingURL=style.css.map */

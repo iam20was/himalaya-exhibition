@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -29,64 +30,379 @@
           <div class="col-sm-10">
             <nav class="d-flex justify-content-end align-items-center">
               <ul class="d-flex mb-0 me-5">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Clubs</a></li>
-                <li><a href="#">Info</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#clubs">Clubs</a></li>
+                <li><a href="#gallery">Gallery</a></li>
               </ul>
               <div class="cta-button">
-                <button><a href="#">Join Us</a></button>
+                <button>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/HimalayaExhibition"
+                    >Join Us</a
+                  >
+                </button>
               </div>
             </nav>
           </div>
         </div>
       </div>
     </header>
-    <section class="hero position-relative">
+    <!-- Hero Section -->
+    <section id="hero" class="hero position-relative">
       <div class="container-fluid g-0">
         <!-- Swiper -->
 
         <div class="swiper myHeroSwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background: linear-gradient(0deg, rgba(255, 255, 255, 0.315), #325069),url('/assets/img/HEX Slide Robotics.jpeg');">
-             
-              <div class="slide-content" >
-                <h2>Himalaya Exhibition(HEX)</h2>
-                <h3>
-                    <i class="fa fa-map-marker"></i> Himalaya College of Engineering, Chysal, Lalitpur &nbsp; &nbsp; | &nbsp; &nbsp; 
-                    <i class="fa fa-calendar"></i>  14th & 15th July 2023
+            <div
+              class="swiper-slide"
+              style="
+                background: linear-gradient(
+                    0deg,
+                    rgba(255, 255, 255, 0.315),
+                    #325069
+                  ),
+                  url('/assets/img/HEX Slide Robotics.jpeg');
+              "
+            >
+              <div class="slide-content">
+                <h2 data-aos="fade-up">Himalaya Exhibition(HEX)</h2>
+                <h3 data-aos="zoom-in">
+                  <i class="fa fa-map-marker"></i> Himalaya College of
+                  Engineering, Chysal, Lalitpur &nbsp; &nbsp; | &nbsp; &nbsp;
+                  <i class="fa fa-calendar"></i> 14th & 15th July 2023
                 </h3>
-                <h4>Imagine | <span>Innovate</span>   | Inspire</h4>
-               
+                <h4 data-aos="zoom-in">Imagine | <span>Innovate</span> | Inspire</h4>
               </div>
-              
             </div>
-            <div class="swiper-slide"  style="background: linear-gradient(0deg, rgba(255 255 255 / 54%), #325069),url('/assets/img/HEX Slide Civil.jpeg');">
-                <div class="slide-content" >
-                    <h2>Himalayan Civil Club Special</h2>
-                  
-                    <h4>Imagine | <span>Innovate</span>   | Inspire</h4>
-                   
-                  </div>
-                  
+            <div
+              class="swiper-slide"
+              style="
+                background: linear-gradient(
+                    0deg,
+                    rgba(255 255 255 / 54%),
+                    #325069
+                  ),
+                  url('/assets/img/HEX Slide Civil.jpeg');
+              "
+            >
+              <div class="slide-content">
+                <h2 data-aos="fade-up">Himalayan Civil Club Special</h2>
+
+                <h4 data-aos="zoom-in">Imagine | <span>Innovate</span> | Inspire</h4>
+              </div>
             </div>
-            <div class="swiper-slide" style="background: linear-gradient(0deg, rgba(255 255 255 / 54%), #325069),url('/assets/img/HEX Slide ICT.jpeg');">
-                <div class="slide-content" >
-                    <h2>Himalayan IT Club Special</h2>
-                  
-                    <h4>Imagine | <span>Innovate</span>   | Inspire</h4>
-                   
-                  </div>
-                  
-                  
+            <div
+              class="swiper-slide"
+              style="
+                background: linear-gradient(
+                    0deg,
+                    rgba(255 255 255 / 54%),
+                    #325069
+                  ),
+                  url('/assets/img/HEX Slide ICT.jpeg');
+              "
+            >
+              <div class="slide-content">
+                <h2 data-aos="fade-up">Himalayan IT Club Special</h2>
+
+                <h4 data-aos="zoom-in">Imagine | <span>Innovate</span> | Inspire</h4>
+              </div>
             </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div class="hex-separator"><svg fill="#ffffff" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1480 117" preserveAspectRatio="none"><path d="M0 24.5c246.7 46.3 493.3 69.4 740 69.4s493.3-23.1 740-69.4V117H0V24.5z"></path></svg></div>
+      <div class="hex-separator">
+        <svg
+          fill="#ffffff"
+          xmlns="https://www.w3.org/2000/svg"
+          viewBox="0 0 1480 117"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0 24.5c246.7 46.3 493.3 69.4 740 69.4s493.3-23.1 740-69.4V117H0V24.5z"
+          ></path>
+        </svg>
+      </div>
     </section>
+    <!-- About HEX Section -->
+    <section id="about" class="about-us">
+      <div class="container">
+        <div class="section-title">
+          <h3 data-aos="zoom-in">About <span>the Exhibition </span></h3>
+          <div class="shape justify-content-center align-items-center d-flex">
+            <i class="fa-regular fa-hourglass"></i>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-md-9">
+            <div class="p-2 pe-4" data-aos="fade-down">
+              <h5>
+                Welcome to the exciting exhibition where you'll see the
+                innovative ideas from the yound minds.
+              </h5>
+              <p>
+                Join us at the highly anticipated HEX event, where a captivating
+                celebration of talent, innovation, and personal growth takes
+                center stage! Your presence would be greatly cherished as we
+                invite you to become an integral part of this extraordinary
+                occasion.
+              </p>
+              <p>
+                As a token of our appreciation, each distinguished participant
+                will be granted exclusive access to their very own dedicated
+                stall in which they can exhibit their remarkable creations. And
+                it gets even more exciting - you will have the privilege of
+                being the proud proprietor of your very own stall!
+              </p>
+              <p>
+                But here's what sets it apart: You don't necessarily need
+                preconceived ideas or projects; instead, you are bestowed with
+                the freedom to join any project or group that piques your
+                interest. This presents a phenomenal opportunity for expanding
+                your knowledge base and gaining insights into effective teamwork
+                dynamics.
+              </p>
+              <p>
+                In addition, we are delighted to inform you that our
+                compassionate and skilled senior members will be in attendance
+                throughout the occasion. They are eager to offer their
+                assistance and provide guidance whenever required. Therefore,
+                please make a note of this important date, gather your
+                innovative mindset and leadership skills, as well as prepare
+                yourself for an extraordinary experience filled with everlasting
+                memories. Those who are interested can contact any of the
+                seniors involved in the activities organized by the HECC club.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div  data-aos="zoom-in-left" class="coordinator shadow card">
+              <img src="/assets/img/Coordinator.jpg" alt="" class="img-fluid" />
+              <div class="coordinator-content p-3">
+                <h5>Ashish Oli</h5>
+                <h6>Coordinator | HEX</h6>
+                <i class="fa fa-envelope"></i>
+                <a
+                  href="mailto:oliashish79@gmail.com
+                          "
+                  >oliashish79@gmail.com
+                </a>
+                <br />
+                <i class="fa fa-phone"></i>
+                <a href="tel:9800000000">9800000000</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-title">
+          <h3 data-aos="zoom-in">Features of <span>the Exhibition </span></h3>
+          <div class="shape justify-content-center align-items-center d-flex">
+            <i class="fa-regular fa-hourglass"></i>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div data-aos="zoom-in" class="p-3 inner-content card me-3 mb-5">
+              <h6>Technical Exhibitions</h6>
+              <p>
+                Explore a diverse range of projects and innovations showcased by
+                talented students. Immerse yourself in the world of cutting-edge
+                technology and witness the power of creativity.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div data-aos="zoom-in" class="p-3 inner-content card ms-3 mb-5">
+              <h6>Great Networking</h6>
+              <p>
+                Connect with like-minded individuals, industry professionals,
+                and potential collaborators. Build valuable relationships,
+                exchange ideas, and lay the foundation for future partnerships.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div data-aos="zoom-in" class="p-3 inner-content card me-3 mb-5">
+              <h6>Competitions and Challenges</h6>
+              <p>
+                Put your skills to the test and participate in thrilling
+                competitions and challenges. Showcase your talent, compete with
+                fellow enthusiasts, and win exciting prizes.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div data-aos="zoom-in" class="p-3 inner-content card ms-3 mb-5">
+              <h6>Social Impact Initiatives</h6>
+              <p>
+                Discover innovative projects and initiatives focused on making a
+                positive impact on society. Learn how technology can be
+                harnessed for social change and contribute to a better future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Clubs -->
+    <section id="clubs" class="clubs">
+      <div class="container">
+        <div class="section-title">
+          <h3 data-aos="zoom-in">Clubs of <span>HCOE</span></h3>
+          <div class="shape justify-content-center align-items-center d-flex">
+            <i class="fa-regular fa-hourglass"></i>
+          </div>
+        </div>
+        <div class="club-list mt-5 d-flex justify-content-center">
+          <div data-aos="zoom-in-right" class="club-item card d-flex p-4">
+            <img class="img-fluid" src="/assets/img/HRC Logo.png" alt="" />
+            <div class="ps-2 content">
+              <a
+                href="https://www.facebook.com/himalayaroboticsclub"
+                target="_blank"
+                ><h5>Himalaya Robotics Club</h5></a
+              >
+              <p>
+                Welcome to the Himalaya Robotics Club (HRC)! We are a passionate
+                community dedicated to exploring the world of robotics and
+                artificial intelligence. Join us to collaborate, learn, and push
+                the boundaries of innovation. Our diverse activities include
+                workshops, competitions, and hands-on projects. With experienced
+                mentors by your side, unleash your creativity and contribute to
+                the future of technology. Come be a part of HRC and shape the
+                world of robotics!
+              </p>
+            </div>
+          </div>
+          <div data-aos="zoom-in-left" class="club-item card p-4">
+            <img
+              class="img-fluid"
+              src="/assets/img/Himalaya Civil Club.png"
+              alt=""
+            />
+            <div class="ps-2 content">
+              <a
+                href="https://www.facebook.com/hcc.hcoe.official"
+                target="_blank"
+                ><h5>Himalaya CIVIL Club</h5></a
+              >
+              <p>
+                Himalaya Civil Club is a vibrant and dynamic community of civil
+                engineering enthusiasts from Himalaya College Of Engineering
+                which aims to provide platform for students in this field to
+                enhance their practical skills and professionalism. Keeping our
+                primary goal to bridge the gap between theoretical and practical
+                knowledge, we aim to promote learning through various workshop
+                and seminars that provide practical exposure to real world
+                challenges.
+              </p>
+            </div>
+          </div>
+          <div data-aos="zoom-in-right" class="club-item card p-4">
+            <img class="img-fluid" src="/assets/img/HECC Logo.png" alt="" />
+            <div class="ps-2 content">
+              <a href="https://www.facebook.com/HECC74" target="_blank"
+                ><h5>HECC Club</h5></a
+              >
+              <p>
+                Himalaya College of Engineering forms electronics and computer
+                club to enhance student welfare, bridge communication, promote
+                growth, and foster collaboration between the department and
+                students. The club aims to meet student needs, organize
+                workshops, promote creativity, and encourage participation in
+                college events for holistic development.
+              </p>
+            </div>
+          </div>
+          <div data-aos="zoom-in-left" class="club-item card p-4">
+            <img class="img-fluid" src="/assets/img/Aastha.png" alt="" />
+            <div class="ps-2 content">
+              <a
+                href="https://www.facebook.com/ArchitecturalStudentsofHimalaya"
+                target="_blank"
+                ><h5>AStHa</h5></a
+              >
+              <p>
+                AStHa is an architecture student club from Himalaya College Of
+                Engineering. The club was established on 2068 and has been
+                working for welfare of students. Every year AStHa organises
+                different programs which benefits the students not only
+                academically but also personally (recreational). We aim to guide
+                students even on development of those skills which are not
+                taught academically and create opportunities which is necessary
+                for growth.
+              </p>
+            </div>
+          </div>
+          <div data-aos="zoom-in-right" class="club-item card p-4">
+            <img class="img-fluid" src="/assets/img/HITC.png" alt="" />
+            <div class="ps-2 content">
+              <a href="https://www.facebook.com/hitc.hcoe" target="_blank"
+                ><h5>HITC</h5></a
+              >
+              <p>
+                Himalaya Information Technology Club (HITC) is a dynamic and
+                innovative group of technology students club from Himalaya
+                College of Engineering, dedicated to exploring the exciting
+                world of technology. Our club is a hub for individuals who are
+                passionate about all things related to computer software and
+                digital technologies. The club focuses on fostering
+                technological innovation, skill development, and collaboration
+                among students who are passionate about IT. Himalaya IT Club
+                serves as a platform for students to explore their interests,
+                expand their knowledge, and enhance their skills in various
+                areas of IT by organizing workshops, seminars, and training
+                sessions with the goal of not only growing academically but also
+                on a personal level. Himalaya IT Club opens up a world of
+                opportunities, friendships, and personal growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-title">
+          <h3 data-aos="zoom-in">Gallery of <span>the HEX </span></h3>
+          <div class="shape justify-content-center align-items-center d-flex">
+            <i class="fa-regular fa-hourglass"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>Copyright &copy; 2023 - HEX - All Rights Reserved</p>
+          </div>
+          <div class="col-md-6 text-end">
+            <p>
+              Designed with ❤ Love By
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/gaganpradhan/"
+                >Gagan Pradhan</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
     <script src="/assets/js/custom.js"></script>
