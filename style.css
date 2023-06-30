@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Poppins:wght@600;900&display=swap");
 body {
   font-family: "Karla", sans-serif;
+  position: relative;
+  overflow-x: hidden;
 }
 
 button {
@@ -330,6 +332,15 @@ footer a {
   }
 }
 @media (max-width: 575px) {
+  header nav ul.d-flex.menu-active {
+    display: block !important;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background: #325069;
+    top: 100%;
+    padding-left: 3rem;
+  }
   html {
     font-size: 10px;
   }

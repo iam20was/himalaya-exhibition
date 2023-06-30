@@ -9,6 +9,8 @@ $accent_color: #F8669E;
 $secondary: #fff;
 body{
     font-family: $primary_font;
+    position: relative;
+    overflow-x: hidden;
 }
 
 button{
@@ -355,6 +357,15 @@ footer {
     }
 }
 @media(max-width: 575px){
+    header nav ul.d-flex.menu-active{
+        display: block!important;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background: $theme_color;
+    top: 100%;
+    padding-left: 3rem;
+    }
     html{
         font-size: 10px;
       }

@@ -33,4 +33,13 @@ window.addEventListener('scroll', () => {
       behavior: 'smooth'
     });
   });
+
   
+  const menuHam = document.getElementById('menu-ham');
+const menuNav = document.querySelector('header nav ul.d-flex');
+
+menuHam.addEventListener('click', () => {
+  menuHam.classList.toggle('fa-bars');
+  menuHam.classList.toggle('fa-times');
+  menuNav.classList.toggle('menu-active');
+});
