@@ -271,7 +271,7 @@ footer a {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 21px;
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -292,4 +292,82 @@ footer a {
 .back-to-top-btn.show {
   display: block;
   opacity: 1;
+}
+
+#menu-ham {
+  color: #fff;
+  font-size: 20px;
+}
+
+.d-mobile-only {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+  header nav ul li {
+    padding-right: 1rem;
+  }
+  header nav ul.me-5 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 0rem !important;
+  }
+  header button {
+    padding: 0.6rem 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .clubs .club-list .club-item, .clubs .club-list .club-item:last-child {
+    width: 90%;
+  }
+}
+@media (max-width: 650px) {
+  .hero .swiper-slide .slide-content h2 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 575px) {
+  html {
+    font-size: 10px;
+  }
+  .d-mobile-only {
+    display: block;
+  }
+  header nav ul.d-flex {
+    display: none !important;
+  }
+  header .col-2 {
+    width: 40%;
+  }
+  header .col-10 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+  }
+  footer p {
+    text-align: center;
+  }
+  .hero .swiper-slide .slide-content h2 {
+    font-size: 3rem;
+  }
+  .hero .swiper {
+    height: 400px;
+  }
+  #features .row .ms-3, #features .row .me-3 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 415px) {
+  .clubs .club-list .club-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .clubs .club-list .club-item .content {
+    padding-top: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
